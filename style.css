@@ -13,11 +13,12 @@ body{
     padding: 0;
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
-
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 header{
-    background-color: #fff;
+    background-color: var(--bg-color);
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -54,7 +55,7 @@ ul li a{
     font-size: 16px;
     line-height: 25px;
     text-align: center;
-    color: #444338;
+    color: var(--text-color);
 }
 
 ul li a::before{
@@ -64,6 +65,7 @@ ul li a::before{
    right: 0;
    bottom: -3px;
    left: 0;
+
 }
 
 ul li a:hover{
@@ -95,7 +97,6 @@ main{
     font-family: 'Poppins', sans-serif;
     font-size: 52px;
     letter-spacing: -0.01em;
-    color: #444338;
     padding-top: 70px;
     margin-top: 10px;
 }
@@ -127,7 +128,6 @@ main{
     font-size: 16px;
     display: flex;
     align-items: center;
-    color: #444338;
 }
 
 #circle{
@@ -143,7 +143,7 @@ main{
 #cv a{
     text-decoration: none;
     font-weight: bold;
-    color: #333;
+    color: var(--text-color);
 }
 
 .fas{
@@ -166,7 +166,6 @@ main{
  #projects h2{
      text-align: left;
      font-size: 36px;
-     color: #444338;
      font-family: 'Roboto', sans-serif;
   
  }
@@ -186,7 +185,6 @@ main{
     min-height: 322px;
     padding: 0 50px;
     text-align: left;
-    color: #444338;
 }
 .card-img img{
     width: 320px;
@@ -203,7 +201,6 @@ main{
 .card-head p{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    color: #333;
 }
 
 #contact{
@@ -232,7 +229,7 @@ footer .fab{
     padding: 5px;
     margin: 5px;
     font-size: 24px;
-    color: #333;
+    color: var(--text-color);
 }
 
 /* about page */
@@ -370,8 +367,28 @@ figcaption{
     border-radius: 20px;
 }
 
+/* dark mood  */
+:root {
+    --bg-color: #fff;
+    --text-color: #333;
+}
 
+[data-theme="dark"] {
+    --bg-color: #152028;
+    --text-color: #f1f1f1;
+}
 
+#theme-switcher{
+    border: none;
+    background-color: var(--bg-color);
+}
 
-
+#theme-switcher img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+/* body, h1, p {
+     transition: background .3s ,color .3s; 
+    } */
 
